@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Against Rumors, Fake News, Misinformation and Disinformation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="menu-bar-container">
+        <div class="menu-bar">
+            <div class="logo">
+                <img src="https://i.ibb.co/phvZdJ6/Untitled-1.png" alt="Logo"> 
+            </div>
+            <a href="home.html">Home</a>
+            <a href="rumors.html"> Rumors</a>
+            <a href="fakenews.html"> FakeNews</a>
+            <a href="misinformation.html"> Misinformation</a>
+            <a href="disinfomation.html">Disinformation</a>
+            <a href="links.html">Links</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Unveiling the Truth</h1>
+        </header>
+        <main>
+             <section>
+                <h2>Understanding the Impact of Misinformation in the Digital Age</h2>
+                <p>With the explosion of digital media, our world is more connected than ever. But how often do we stop to consider the accuracy of the information we encounter daily? The spread of misinformation and fake news can have far-reaching effects on society, politics, and individual beliefs.</p>
+                <h3>Are You Sharing the Truth?</h3>
+                <p>We all love to share interesting stories, news about celebrities, or humorous anecdotes on social media. But it's crucial to ask ourselves: is what I'm sharing true? Have I checked the facts, or am I unwittingly contributing to the spread of false information?</p>
+                <h3>What Drives the Spread of Fake News?</h3>
+                <p>Understanding why fake news is shared is key to combating it. Is it for entertainment, for political gain, or simply because it aligns with our pre-existing beliefs? Recognizing these motives can help us be more critical of the news we consume and share.</p>
+                <h3>The Consequences of Misinformation</h3>
+                <p>Unverified stories can create false narratives, influence public opinion, and even sway important decisions. It's important to understand the consequences of spreading fake news and how it can distort our perception of reality.</p>
+                <h3>Identify Rumors</h3>
+                <p>Rumors are spread out on the Internet. It makes people felt uncomfortable, anxiety and helpless.</p>
+                <h3>Understanding Disinformation in Decent Years</h3>
+                <p>Disinformation is designed to guide public opinion. It is often used for political purposes to guide public opinion on an issue and to try to gain support.</p>
+                <br><br>
+            </section>
+            <section class="columns">
+<div class="column-container"> 
+                <div class="column" id="rumorsColumn">
+                    <h3>Rumors</h3>
+                    <p>Rumors on the internet have been intensely studied during the last decade, refers to the information not confirmed by the official group and viral on the internet.</p>
+                    <span id="rumorsLink" class="toggle-link" onclick="toggleContent('rumorsContent', 'rumorsLink')">Read more</span>
+                    <div id="rumorsContent" class="content">
+                        <p>Different researchers provide several interpretations of rumor, lt is unverified information spread among the internet...</p>
+                        <span class="toggle-link" onclick="toggleContent('rumorsContent', 'rumorsLink')">Read less</span>
+                    </div>
+                </div>
+               <div class="column" id="fakeNewsColumn">
+                    <h3>Fake News</h3>
+                    <p>When you see something you like online, do you check to make sure that it's true before you share it?</p>
+                    <span id="fakeNewsLink" class="toggle-link" onclick="toggleContent('fakeNewsContent', 'fakeNewsLink')">Read more</span>
+                    <div id="fakeNewsContent" class="content">
+                        <p>Not everything that we read or see on the internet is true - and if it isn't, and we share it, we could be making more people believe something that is actually made up. Stories like this are called fake news and they can be a problem. ...</p>
+                        <span class="toggle-link" onclick="toggleContent('fakeNewsContent', 'fakeNewsLink')">Read less</span>
+                    </div>
+                    </div>
+                </div>
+<div class="column-container">
+                <div class="column" id="misinfoColumn">
+                    <h3>Misinformation</h3>
+                    <p>It is also easier than it used to be to edit photos, and create fake websites and stories that look realistic.</p>
+                    <span id="misinfoLink" class="toggle-link" onclick="toggleContent('misinfoContent', 'misinfoLink')">Read more</span>
+                    <div id="misinfoContent" class="content">
+                        <p>Fake news is a problem for different reasons. The first kind of fake news - deliberate lies - is a problem because it can make people believe things that are completely untrue. ...</p>
+                        <span class="toggle-link" onclick="toggleContent('misinfoContent', 'misinfoLink')">Read less</span>
+                    </div>
+                    </div>
+                <div class="column" id="disinfoColumn">
+                        <h3>Disinformation</h3>
+                        <p>Disinformation is widely defined as the purposeful dissemination of false information intended to mislead or harm, which largely coincides with the other definitions of disinformation.</p>
+                        <span id="disinfoLink" class="toggle-link" onclick="toggleContent('disinfoContent', 'disinfoLink')">Read more</span>
+                        <div id="disinfoContent" class="content">
+                            <p>While disinformation is a complex societal issue that did not start with online platforms like Meta (Facebook) or TikTok, it is the business models of these platforms that has led to the development and deployment of technical architecture and algorithms operating with the scale and power to shape public discourse en masse. ...</p>
+                            <span class="toggle-link" onclick="toggleContent('disinfoContent', 'disinfoLink')">Read less</span>
+                        </div>
+                        </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Fight Against Fake News. All rights reserved.</p>
+        </footer>
+    </div>
+
+<script>
+    function toggleContent(contentId, linkId) {
+        var content = document.getElementById(contentId);
+        var link = document.getElementById(linkId);
+
+        if (content.style.display === "none" || content.style.display === '') {
+            // Expand the clicked content
+            content.style.display = "block";
+            link.style.display = "none";
+        } else {
+            // Collapse the clicked content
+            content.style.display = "none";
+            link.style.display = "inline";
+        }
+    }
+</script></body>
+</html>
