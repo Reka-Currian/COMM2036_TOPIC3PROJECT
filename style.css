@@ -104,3 +104,54 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+  .example-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .example {
+            width: 30%;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .example img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .example-title {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .example-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .example:hover .example-overlay {
+            opacity: 1;
+        }
+        .content-section {
+            display: none;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #333;
+            border-radius: 5px;
+        }
